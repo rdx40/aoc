@@ -1,10 +1,5 @@
 def find_floor(instructions):
-    floor = 0
-    for char in instructions:
-        if char == '(':
-            floor += 1
-        elif char == ')':
-            floor -= 1
+    floor = instructions.count('(')-instructions.count(')')
     return floor
 
 def find_basement_position(instructions):
